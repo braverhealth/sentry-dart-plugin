@@ -131,7 +131,7 @@ class SentryDartPlugin {
     List<String> releaseJsFilesParams = [];
     releaseJsFilesParams.addAll(params);
 
-    _addExtensionToParams(['map', 'js'], releaseJsFilesParams, _release,
+    _addExtensionToParams(['map', 'js', 'dart'], releaseJsFilesParams, _release,
         _configuration.webBuildFilesFolder);
 
     _addWait(releaseJsFilesParams);
